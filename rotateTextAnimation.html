@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Text Animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: linear-gradient(to bottom,blue,white);
+            background-repeat:no-repeat;
+
+        }
+        .container{
+            position: relative;
+            margin-top: 300px;
+            margin-left: 35vw;
+        }
+        h1{
+            font-size: 45px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            
+
+        }
+
+        .inner{
+            position: absolute;
+            height: 50px;
+            font-size: 45px;
+            display: inline-block;
+            overflow: hidden;
+            line-height: 50px;
+           
+        }
+
+        .inner span{
+            color: rgb(92, 90, 70);
+            padding-left: 10px;
+           
+           
+            animation: animate 8s ease infinite;
+            position: relative;
+        }
+
+        @keyframes animate {
+            0%{top: 0}
+            30%{top:0}
+            35%{top:-49px}
+            65%{top: -49px}
+            70%{top:-99px}
+            95%{top:-99px}
+            100%{top:0}
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            hi im, 
+            <div class="inner">
+                <span>
+                web develpoer <br>
+                python develpoer <br>
+                freelancer
+
+                </span>
+            </div>
+        </h1>
+    </div>
+</body>
+</html>
